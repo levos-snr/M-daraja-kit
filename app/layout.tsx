@@ -22,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} h-screen flex flex-col`}>
+      <body
+        className={`${poppins.className} h-screen flex flex-col bg-myBgColor`}
+      >
         <Navbar />
         <div className="flex h-[92%] w-full">
           <Sidebar />

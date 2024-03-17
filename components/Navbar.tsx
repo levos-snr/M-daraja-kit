@@ -19,7 +19,7 @@ export const Navbar = () => {
       <a href="#" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon
           icon={faGithub}
-          className="h-10 w-10 object-cover bg-myWhite rounded-full"
+          className="h-6 w-6 object-cover bg-myWhite rounded-full"
         />{" "}
       </a>
     </nav>

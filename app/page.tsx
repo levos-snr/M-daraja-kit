@@ -4,6 +4,7 @@ import Image from "next/image";
 //Import locally
 import { SmallNav } from "@/components/SmallNav";
 import intro from "../public/intro.png";
+import { NextPage } from "@/components/NextPage";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
         yes to efficiency, yes to innovation, and yes to a brighter future
         powered by M-Daraja-Kit.
       </p>
+      <NextPage nextHref="Installation" />
     </main>
   );
 }

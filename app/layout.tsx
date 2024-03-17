@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "@/components/Navbar";
 
-const poppins = Poppins({ subsets: ["latin"],
-weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 export const metadata: Metadata = {
   title: { template: "%s | M-Daraja-Kit Docs", default: "M-Daraja-Kit Docs" },
@@ -18,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       <body className={`${poppins.className} h-screen flex flex-col`}>{children}</body>
+      <body className={`${poppins.className} h-screen flex flex-col`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

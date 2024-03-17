@@ -4,11 +4,12 @@ import Image from "next/image";
 //Import locally
 import { SmallNav } from "@/components/SmallNav";
 import intro from "../public/intro.png";
+import SmoothScroll from "@/components/SmoothScroll";
 import { NextPage } from "@/components/NextPage";
 
 export default function Home() {
   return (
-    <main className="w-4/5 p-5 bg-myBgColor">
+    <main className="w-4/5 p-5 mb-10 bg-myBgColor">
       <SmallNav />
       <h1 className="h1 text-myTextColor">
         Introducing M-Daraja-Kit
@@ -38,7 +39,8 @@ export default function Home() {
         yes to efficiency, yes to innovation, and yes to a brighter future
         powered by M-Daraja-Kit.
       </p>
-      <NextPage nextHref="Installation" />
+      <NextPage nextHref="installation" />
+      <SmoothScroll />
     </main>
   );
 }

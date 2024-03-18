@@ -6,10 +6,10 @@ import { usePathname } from "next/navigation";
 import React from "react";
 
 export const links = [
-  { text: "Introduction", link: "/" },
-  { text: "Get Started", link: "/installation" },
-  { text: "Api", link: "/api" },
-  { text: "Tools", link: "/utils" },
+  { text: "introduction", link: "/" },
+  { text: "installation", link: "/installation" },
+  { text: "api", link: "/api" },
+  { text: "tools", link: "/utils" },
 ];
 
 export const Sidebar = () => {
@@ -20,7 +20,7 @@ export const Sidebar = () => {
       {links.map((l) => {
         const isActive =
           pathName.includes(l.text) ||
-          (l.text === "Introduction" ? pathName.length === 1 : false);
+          (l.text === "introduction" ? pathName.length === 1 : false);
 
         return (
           <Link

@@ -6,6 +6,8 @@ import React from "react";
 
 //locally imported
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { SmallNav } from "@/components/SmallNav";
+import { InstallCommands } from "@/components/InstallCommands";
 
 
 
@@ -20,7 +22,13 @@ const Page = () => {
     return(
         <>
         <ScrollArea className="w-4/6 h-full p-5">
-        installations
+            <SmallNav />
+            <h1 id="installation">Installation</h1>
+            <p className="mt-5 text-myGray">
+          In the directory containing package.json, run your package manager`s
+          install command:
+        </p>
+        <InstallCommands />
         </ScrollArea>
         </>
     )

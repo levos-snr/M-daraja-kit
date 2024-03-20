@@ -10,6 +10,7 @@ import { QrCode } from "@/components/QrCode";
 import { OnlinePayment } from "@/components/OnlinePayment";
 import { RegisterC2BUrl } from "@/components/RegisterC2BUrl";
 import { B2CPaymentRequest } from "@/components/B2CPaymentRequest";
+import { TransactionStatus } from "@/components/TransactionStatus";
 
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
 
 
 const links = [
+    "TransactionStatus",
     "B2CPaymentRequest",
     "RegisterURLS",
     "OnlinePayment",
@@ -40,6 +42,7 @@ const Page = () => {
         <OnlinePayment/>
         <RegisterC2BUrl />
         <B2CPaymentRequest />
+        <TransactionStatus />
 
 
         </ScrollArea >

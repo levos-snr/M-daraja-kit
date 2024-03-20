@@ -16,6 +16,8 @@ import { ReverseC2BTransaction } from "@/components/ReverseC2BTransaction";
 import { TaxRemittance } from "@/components/TaxRemittance";
 import { B2BPaymentRequest } from "@/components/B2BPaymentRequest";
 import { B2BExpressCheckout } from "@/components/B2BExpressCheckout";
+import { NextPage } from "@/components/NextPage";
+import SmoothScroll from "@/components/SmoothScroll";
 
 
 export const metadata: Metadata = {
@@ -58,8 +60,21 @@ const Page = () => {
         <TaxRemittance />
         <B2BPaymentRequest />
         <B2BExpressCheckout />
-
+        <NextPage prevHref="installation" nextHref="utils" />
         </ScrollArea >
+        <aside className="w-1/6 border-l p-5 flex flex-col gap-3">
+        <p className="text-brightGreen font-semibold">On this page</p>
+        {links.map((l) => (
+          <a
+            href={`https://daraja-kit.vercel.app/api#${l}`}
+            className="bg-gray-100 text-sm font-semibold px-2 hover:text-myPurple ml-2 overflow-clip"
+            key={l}
+          >
+            {l}
+          </a>
+        ))}
+      </aside>
+      <SmoothScroll />
         </>
     )
 }

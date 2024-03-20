@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //locally imported
 import { PastableSpan } from "./PastableSpan";
 import { ApiTitle } from "./ApiTitle";
+import { BlockWrapper } from "./BlockWrapper";
 
 
 export const StkPush = () => {
@@ -67,6 +68,7 @@ return (
       <p className="mt-5">
         Here is an example of how you can make a request in node .
       </p>
+      <BlockWrapper code={code} />
       <p className="mt-5">
         The account reference param i have found to be required when using the
         api. If you don`t have an account reference or you don`t need it you
@@ -100,6 +102,7 @@ return (
         when processing daraja responses. Here is an example of how you can use
         the types in NextJS.
       </p>
+      <BlockWrapper code={callBackCode} />
     </section>
 )
 }

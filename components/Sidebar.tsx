@@ -9,7 +9,7 @@ export const links = [
   { text: "introduction", link: "/" },
   { text: "installation", link: "/installation" },
   { text: "api", link: "/api" },
-  { text: "tools", link: "/utils" },
+  { text: "tools", link: "/tools" },
 ];
 
 export const Sidebar = () => {

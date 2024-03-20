@@ -60,7 +60,7 @@ const Page = () => {
         <TaxRemittance />
         <B2BPaymentRequest />
         <B2BExpressCheckout />
-        <NextPage prevHref="installation" nextHref="utils" />
+        <NextPage prevHref="installation" nextHref="tools" />
         </ScrollArea >
         <aside className="w-1/6 border-l p-5 flex flex-col gap-3">
         <p className="text-brightGreen font-semibold">On this page</p>

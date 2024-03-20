@@ -7,6 +7,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { SmallNav } from "@/components/SmallNav";
 import { StkPush } from "@/components/StkPush";
 import { QrCode } from "@/components/QrCode";
+import { OnlinePayment } from "@/components/OnlinePayment";
 
 
 export const metadata: Metadata = {
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 
 
 const links = [
+    "OnlinePayment",
     "QrCode",
     "StkPush",
     
@@ -31,6 +33,7 @@ const Page = () => {
         <p className="text-myGray">The documentation of all available functions and types.</p>
         <StkPush />
         <QrCode />
+        <OnlinePayment/>
 
 
         </ScrollArea >

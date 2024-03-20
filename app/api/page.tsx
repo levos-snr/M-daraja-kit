@@ -12,6 +12,7 @@ import { RegisterC2BUrl } from "@/components/RegisterC2BUrl";
 import { B2CPaymentRequest } from "@/components/B2CPaymentRequest";
 import { TransactionStatus } from "@/components/TransactionStatus";
 import { AccountBalance } from "@/components/AccountBalance";
+import { ReverseC2BTransaction } from "@/components/ReverseC2BTransaction";
 
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
 
 
 const links = [
+    "ReverseC2BTransaction",
     "Accountbalance",
     "TransactionStatus",
     "B2CPaymentRequest",
@@ -46,6 +48,7 @@ const Page = () => {
         <B2CPaymentRequest />
         <TransactionStatus />
         <AccountBalance />
+        <ReverseC2BTransaction />
 
 
         </ScrollArea >

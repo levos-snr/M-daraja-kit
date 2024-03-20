@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 //locally imported
 import { PastableSpan } from "./PastableSpan";
+import { ApiTitle } from "./ApiTitle";
 
 
 export const StkPush = () => {
@@ -55,6 +56,7 @@ const callBackCode = `
 
 return (
     <section className="text-myGray">
+        <ApiTitle text="Stk Push" />
          <p className="mt-5 ">
         The library exports a function{" "}
         <PastableSpan text="stkPushRequest" /> that takes an object as a

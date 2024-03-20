@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { SmallNav } from "@/components/SmallNav";
 import { StkPush } from "@/components/StkPush";
+import { QrCode } from "@/components/QrCode";
 
 
 export const metadata: Metadata = {
@@ -14,7 +15,9 @@ export const metadata: Metadata = {
 
 
 const links = [
+    "QrCode",
     "StkPush",
+    
 
 ]
 
@@ -27,6 +30,7 @@ const Page = () => {
         <h1 className="text-myTextColor">API</h1>
         <p className="text-myGray">The documentation of all available functions and types.</p>
         <StkPush />
+        <QrCode />
 
 
         </ScrollArea >

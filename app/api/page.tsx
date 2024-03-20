@@ -14,6 +14,7 @@ import { TransactionStatus } from "@/components/TransactionStatus";
 import { AccountBalance } from "@/components/AccountBalance";
 import { ReverseC2BTransaction } from "@/components/ReverseC2BTransaction";
 import { TaxRemittance } from "@/components/TaxRemittance";
+import { B2BPaymentRequest } from "@/components/B2BPaymentRequest";
 
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
 
 
 const links = [
+    "B2BPaymentRequest",
     "TaxRemittance",
     "ReverseC2BTransaction",
     "Accountbalance",
@@ -52,7 +54,7 @@ const Page = () => {
         <AccountBalance />
         <ReverseC2BTransaction />
         <TaxRemittance />
-
+        <B2BPaymentRequest />
 
         </ScrollArea >
         </>
